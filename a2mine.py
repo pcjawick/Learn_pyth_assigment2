@@ -9,7 +9,7 @@ def get_length(dna):
     4
     """
 
-    return len("dna")
+    return len('dna')
 
 
 def is_longer(dna1, dna2):
@@ -25,7 +25,7 @@ def is_longer(dna1, dna2):
     """
     
 
-    return len(dna1) > len(dna2)
+    return len('dna1') > len('dna2')
 
 def count_nucleotides(dna, nucleotide):
     """ (str, str) -> int
@@ -38,7 +38,7 @@ def count_nucleotides(dna, nucleotide):
     0
     """
 
-    return "nucleotide" in "dna"
+    return 'nucleotide' in 'dna'
 
 def contains_sequence(dna1, dna2):
     """ (str, str) -> bool
@@ -52,13 +52,13 @@ def contains_sequence(dna1, dna2):
     False
 
     """
-    return "dna2" in "dna1"
+    return 'dna2' in 'dna1'
 
 """four more defs from here"""   
 
 def is_valid_sequence 
 '''str-> bool
-returns true if only A,T, C, G is represeted
+returns true if only A,T, C, G is represented 
 
 '''
 def insert_sequence
@@ -72,6 +72,8 @@ def get_complement
 '''(str) -> str
 Returns complimentary nukleotide for A(=T), T(=A), C(=G), G(=C) 
 '''
+
+
 def get_complementary_sequence
 '''(str) -> str
 eturns complimentary nukleotide for A(=T), T(=A), C(=G), G(=C) in sequense
