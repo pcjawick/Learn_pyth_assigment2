@@ -23,7 +23,9 @@ def is_longer(dna1, dna2):
     >>> is_longer('ATCG', 'ATCGGA')
     False
     """
-    return dna1 > dna2
+    
+
+    return len(dna1) > len(dna2)
 
 def count_nucleotides(dna, nucleotide):
     """ (str, str) -> int
@@ -35,6 +37,7 @@ def count_nucleotides(dna, nucleotide):
     >>> count_nucleotides('ATCTA', 'G')
     0
     """
+
     return "nucleotide" in "dna"
 
 def contains_sequence(dna1, dna2):
@@ -51,4 +54,28 @@ def contains_sequence(dna1, dna2):
     """
     return "dna2" in "dna1"
 
-"""two more defs from here"""    
+"""four more defs from here"""   
+
+def is_valid_sequence 
+'''str-> bool
+returns true if only A,T, C, G is represeted
+
+'''
+def insert_sequence
+'''(str, str, int) -> str
+Inserts sequense at a given index
+
+'''
+
+
+def get_complement  
+'''(str) -> str
+Returns complimentary nukleotide for A(=T), T(=A), C(=G), G(=C) 
+'''
+def get_complementary_sequence
+'''(str) -> str
+eturns complimentary nukleotide for A(=T), T(=A), C(=G), G(=C) in sequense
+'''
+
+
+
