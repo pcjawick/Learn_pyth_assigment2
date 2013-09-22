@@ -8,6 +8,9 @@ def get_length(dna):
     >>> get_length('ATCG')
     4
     """
+    #tested and workx
+    return (len(dna))
+ 
 
 
 def is_longer(dna1, dna2):
@@ -21,6 +24,9 @@ def is_longer(dna1, dna2):
     >>> is_longer('ATCG', 'ATCGGA')
     False
     """
+    #tested and workx
+    return (len(dna1) > len(dna2))
+ 
 
 
 def count_nucleotides(dna, nucleotide):
@@ -33,6 +39,14 @@ def count_nucleotides(dna, nucleotide):
     >>> count_nucleotides('ATCTA', 'G')
     0
     """
+    #tested and workx
+    n = 0
+    for u in dna:
+        if u in nucleotide:
+            n = n + 1
+    
+    return n
+
 
 
 def contains_sequence(dna1, dna2):
@@ -47,3 +61,35 @@ def contains_sequence(dna1, dna2):
     False
 
     """
+    if dna1.count(dna2) >= 1:
+        return 'True'
+
+    return 'false'
+
+"""All above tested and OK. Score 12/24 as of sun 22.9"""   
+
+#def is_valid_sequence 
+'''str-> bool
+returns true if only A,T, C, G is represented 
+
+'''
+#def insert_sequence
+'''(str, str, int) -> str
+Inserts sequense at a given index
+
+'''
+
+
+#def get_complement  
+'''(str) -> str
+Returns complimentary nukleotide for A(=T), T(=A), C(=G), G(=C) 
+'''
+
+
+#def get_complementary_sequence
+'''(str) -> str
+eturns complimentary nukleotide for A(=T), T(=A), C(=G), G(=C) in sequense
+'''
+
+
+
