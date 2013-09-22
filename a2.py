@@ -90,7 +90,7 @@ def insert_sequence(nuc1,nuc2,num):#TEsted and workx
     dns = ''
 
 
-    if abs(num) < (len(nuc1)):
+    if abs(num) > (len(nuc1)):
         num = len(nuc1)
 
     dns = (nuc1[0:num] + nuc2 + nuc1[(num):(len(nuc1)+len(nuc2))])
