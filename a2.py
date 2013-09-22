@@ -61,10 +61,8 @@ def contains_sequence(dna1, dna2):
     False
 
     """
-    if dna1.count(dna2) >= 1:
-        return 'True'
-
-    return 'false'
+    return dna1.count(dna2) >= 1
+ 
 
 """All above tested and OK. Score 12/24 as of sun 22.9"""   
 #is valid is tested and checked in IDLE:-)
@@ -93,11 +91,10 @@ def insert_sequence(nuc1,nuc2,num):#TEsted and workx
 
 
     if abs(num) < (len(nuc1)):
-            dns = (nuc1[0:num] + nuc2 + nuc1[(num):(len(nuc1)+len(nuc2))])
-            return dns
+        num = len(nuc1)
 
-    return 'Indexerror'
-
+    dns = (nuc1[0:num] + nuc2 + nuc1[(num):(len(nuc1)+len(nuc2))])
+    return dns
 
 
 
